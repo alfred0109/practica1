@@ -1,0 +1,75 @@
+body {
+    background-color: #e0f7fa; /* Color celeste claro */
+    font-family: 'Arial', sans-serif; /* Fuente más legible */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px; /* Espaciado alrededor del contenedor */
+}
+
+h1 {
+    color: #00796b; /* Color del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.login-form {
+    background-color: white; /* Fondo blanco para el formulario */
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    padding: 30px; /* Mayor espaciado interno */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px; /* Mayor padding para mejor usabilidad */
+    margin-bottom: 20px; /* Mayor espaciado entre inputs */
+    border: 1px solid #00796b; /* Borde celeste */
+    border-radius: 6px; /* Bordes más suaves */
+    font-size: 16px; /* Tamaño de fuente más grande */
+}
+
+.login-input:focus {
+    border-color: #004d40; /* Color de borde al enfocar el input */
+    outline: none; /* Quitar el contorno predeterminado */
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b; /* Botón celeste */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px; /* Tamaño de fuente más grande */
+}
+
+.login-button:hover {
+    background-color: #3f4d00; /* Color más oscuro al pasar el ratón */
+}
+
+.create-account {
+    margin-top: 15px; /* Espaciado superior */
+}
+
+.create-account-link {
+    color: #00796b;
+    cursor: pointer;
+}
+
+.create-account-link:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Estilo para mensajes de error (opcional) */
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

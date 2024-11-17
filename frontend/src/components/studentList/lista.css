@@ -1,0 +1,153 @@
+.lista {
+    background-color: #007BFF; /* Color azul para el fondo */
+    padding: 40px; /* Aumentar el espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    width: 1250px; /* Ancho aumentado del contenedor */
+    height: 600px; /* Altura aumentada del contenedor */
+    margin: auto; /* Centrar el contenedor horizontalmente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+.lista .cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 10px; 
+    gap: 5px;
+    background-color: #74bef0; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.lista .cards-container .card {
+    background-color: rgb(101, 52, 235);
+    color: rgb(235, 219, 229); 
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(230, 7, 7); 
+    transition: .3s ease;
+    font-family: 'Bebas Neue', sans-serif; 
+}
+
+.lista .cards-container .card:hover {
+    transform: scale(1.03);
+}
+.lista .cards-container .card:hover {
+    box-shadow: 0 0 1px rgb(81, 224, 25);
+}
+.lista .id{
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    font-size: 10px;
+}
+.lista .edit-ico{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: aqua;
+    transition: .2s ease;
+}
+.lista .edit-ico:hover{
+    box-shadow: 0 0 1px aqua;
+}
+.lista .delete-ico{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: rgb(248, 91, 91);
+    transition: .2s ease;
+}
+.lista .delete-ico:hover{
+    box-shadow: 0 0 1px rgb(248, 91, 91);
+}
+.lista .card .ico{
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.lista .card .ico:hover{
+    background-color: #c21414;
+}
+.lista .card p{
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+
+
+.lista .modal-delete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(241, 32, 32, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista .contend {
+    background-color: rgb(118, 168, 214);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.lista .modal-delete .btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.lista .btn-NO,
+.btn-SI {
+    margin-top: 10px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.search-input {
+    width: 500px;
+    padding: 15px; /* Espaciado interno para hacerlo más grande */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    border: 2px solid #007BFF; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo del input */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: border-color 0.3s; /* Transición suave para el color del borde */
+}
+
+.search-input:focus {
+    border-color: #29e710; 
+    outline: none; /* Elimina el contorno por defecto */
+}
+.lista .btn-NO {
+    background-color: #ccc; 
+    color: black;
+}
+.lista .btn-NO:hover{
+    background-color: #ffffff;
+}
+
+.lista .btn-SI {
+    background-color: #d9534f; 
+    color: white; 
+}
+
+.lista .btn-SI:hover {
+    background-color: #c9302c; 
+}

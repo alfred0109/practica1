@@ -1,0 +1,49 @@
+/* UserForm.css */
+
+.register {
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 80px auto; /* Centrado en la página */
+    padding: 20px; /* Espaciado interno */
+    font-family: 'Arial', sans-serif;
+    font-size: 10px; /* Fuente */
+}
+
+.register h1 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color del texto */
+}
+
+.register form {
+    display: flex; /* Usar flexbox para el formulario */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+.register input {
+    margin-bottom: 15px; /* Espaciado entre inputs */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados para los inputs */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.register input:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+.register button {
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.register button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
